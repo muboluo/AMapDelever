@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="theme_item_height">45dp</dimen>
+
+    <dimen name="theme_text_medium">17dp</dimen>
+
+</resources>

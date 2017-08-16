@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_set_rout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/back"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/layout_close"
+            android:layout_toRightOf="@+id/img_back"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed_start_point"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_box_edit_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/app_start_point"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"/>
+
+
+            <EditText
+                android:id="@+id/ed_pass_point_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_box_edit_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/app_pass_point_1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/ed_pass_point_2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_box_edit_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/app_pass_point_2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/ed_pass_point_3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_box_edit_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/app_pass_point_3"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/ed_end_point"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_box_edit_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/app_end_point"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_close"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_clear_start"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/close_dialog_icon"/>
+
+            <ImageView
+                android:id="@+id/iv_clear_point_1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/close_dialog_icon"
+                android:visibility="gone"/>
+
+
+            <ImageView
+                android:id="@+id/iv_clear_point_2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/close_dialog_icon"
+                android:visibility="gone"/>
+
+
+            <ImageView
+                android:id="@+id/iv_clear_point_3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/close_dialog_icon"
+                android:visibility="gone"/>
+
+
+            <ImageView
+                android:id="@+id/iv_clear_end"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/close_dialog_icon"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_start_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/layout_close"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/layout_close"
+            android:layout_toRightOf="@+id/img_back"
+            android:background="@drawable/btn_gray_bg"
+            android:text="开始搜索"
+            android:textColor="@color/colorWhite"/>
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/list_view_poi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_search_edit"
+        android:background="@color/colorWhite"
+        android:divider="@color/colorGrayLittle"
+        android:dividerHeight="0.5dp"
+        android:padding="4dp"
+        android:scrollbars="none"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

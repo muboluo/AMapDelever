@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/back"/>
+
+        <EditText
+            android:id="@+id/edit_query_point"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/img_back"
+            android:background="@drawable/input_box_edit_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/app_edit_search_poi"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view_poi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:divider="@color/colorGrayLittle"
+        android:dividerHeight="0.5dp"
+        android:padding="4dp"
+        android:scrollbars="none"/>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/transparent"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/theme_item_height"
+        android:background="@color/colorGrayLittle"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="请选择文件数量"
+        android:textColor="@color/colorBlack"
+        />
+
+    <TextView
+        android:id="@+id/textview_file_no_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="一件"
+        android:textColor="@color/colorBlack"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayLittle"/>
+
+
+    <TextView
+        android:id="@+id/textview_file_no_2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="两件"
+        android:textColor="@color/colorBlack"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayLittle"/>
+
+    <TextView
+        android:id="@+id/textview_file_no_3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="三件"
+        android:textColor="@color/colorBlack"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayLittle"/>
+
+
+    <TextView
+        android:id="@+id/textview_file_no_4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="四件"
+        android:textColor="@color/colorBlack"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayLittle"/>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="取消"
+        android:textColor="@color/colorBlack"
+
+        />
+
+</LinearLayout>

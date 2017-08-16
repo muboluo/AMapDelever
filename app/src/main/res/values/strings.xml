@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">文档配送</string>
+    <string name="app_start_point">请输入起点</string>
+    <string name="app_pass_point_1">输入途经点1</string>
+    <string name="app_pass_point_2">输入途经点2</string>
+    <string name="app_pass_point_3">输入途经点3</string>
+    <string name="app_end_point">请输入终点</string>
+    <string name="app_edit_search_poi">请输入位置</string>
+</resources>
